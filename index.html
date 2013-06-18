@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>WebRTC-SIP</title>
+    <meta content="text/html;charset=UTF-8" http-equiv="content-type">
+    <link href="assets/css/main.css" type="text/css" rel="stylesheet"/>
+  </head>
+  <body>
+    <div id="registration">
+      <h1>Benutzer</h1>
+      <select>
+        <option value="mmtlukas">mmtlukas</option>
+        <option value="mmtbakk">mmtbakk</option>
+      </select>
+      <h1>Anmeldung</h1>
+      <form>
+        <input type="text" name="realm" placeholder="domain.com"/>
+        <input type="text" name="impi" placeholder="username"/>
+        <input type="email" name="impu" placeholder="sip:username@domain.com"/>
+        <input type="password" name="password" placeholder="password"/>
+        <input type="button" name="login" value="Login" disabled="disabled"/>
+        <input type="button" name="logout" value="Logout" disabled="disabled"/>
+      </form>
+    </div>
+    <div id="dialogue">
+      <h1>Anruf</h1>
+      <div class="status">
+        (Status)
+      </div>
+      <form>
+        <input type="text" name="dialoguepartner" placeholder="Dialogue partner"/>
+        <div class="options">
+          <input type="checkbox" name="audio" value="Audio" checked="checked" disabled="disabled"/>
+          Audio
+          <input type="checkbox" name="video" value="Video" disabled="disabled"/>
+          Video
+        </div>
+        <input type="button" name="call" value="Call" disabled="disabled"/>
+        <input type="button" name="hangup" value="Hangup" disabled="disabled"/>
+      </form>
+    </div>
+
+    <div id="media">
+      <h1>Video</h1>
+      <video id="video-local" autoplay muted="muted"></video>
+      <video id="video-remote" autoplay></video>
+      <audio id="audio-remote" autoplay></audio>
+    </div>
+
+    <script type="text/javascript" src="assets/js/jquery.js"></script>
+    <script type="text/javascript" src="SIPml-api.min.js"></script>
+    <script type="text/javascript" src="assets/js/sip.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+  </body>
+</html>

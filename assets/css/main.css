@@ -1,0 +1,68 @@
+html, body {
+  font-family: "Arial Rounded MT Bold";
+  font-size: 12px;
+}
+
+h1 {
+  font-size: 18px;
+}
+
+#registration, #dialogue, #media {
+  width: 200px;
+  float: left;
+  margin: 0px 20px 0px 20px;
+  position: relative;
+}
+
+form {
+  width: 200px;
+}
+
+input {
+  box-sizing: border-box;
+  width: 200px;
+}
+
+input[type="checkbox"] {
+  width: 18px;
+  margin: 1px;
+}
+
+video {
+  border: 1px solid #999;
+}
+
+#video-local {
+  position: absolute;
+  z-index: 2;
+  top: 40px;
+  left: 0px;
+  width: 70px;
+}
+
+#video-remote {
+  width: 200px;
+  position: absolute;
+  z-index: 1;
+  top: 40px;
+}
+
+#dialogue .options {
+  margin: 5px 0px 5px 0px;
+  height: 16px;
+  line-height: 16px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+#dialogue .status {
+  font-family: Arial;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 10px 0px 10px 0px;
+  width: 100%;
+  padding: 5px;
+  background: #EEE;
+  text-align: center;
+  box-sizing: border-box;
+}
